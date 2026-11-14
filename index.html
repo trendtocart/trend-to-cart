@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trend To Cart - Find What's Worth It</title>
+<meta name="description" content="Shop trending products at Trend To Cart and place your order on WhatsApp.">
+<link rel="icon" href="images/logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#home"><img src="images/logo.jpeg" alt="Trend To Cart logo"><span>Trend To Cart</span></a>
+    <input id="search" type="search" placeholder="Search products" aria-label="Search products">
+    <button id="cartBtn" class="cartbtn" aria-label="Open cart">Cart <b id="cartCount">0</b></button>
+  </div>
+  <nav class="wrap links" aria-label="Sections">
+    <a href="#categories">Categories</a><a href="#shop">Shop</a><a href="#faq">Policies</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="wrap">
+    <h1>Find what's worth it.</h1>
+    <p>Trending products picked for you. Add items to your cart, send one WhatsApp message, and we take care of the rest.</p>
+    <a class="btn light" href="#shop">Shop now</a>
+  </div>
+</section>
+
+<section class="wrap perks" aria-label="Offers">
+  <div><b>Order on WhatsApp</b><span>One message for your whole cart</span></div>
+  <div><b>Prepaid orders</b><span>UPI and other prepaid options</span></div>
+  <div><b>Trending picks</b><span>New products added regularly</span></div>
+</section>
+
+<section id="categories" class="wrap sec"><h2>Shop by category</h2><div id="catGrid" class="cats"></div></section>
+<section id="featured" class="wrap sec"><h2>Best sellers</h2><div id="featGrid" class="grid"></div></section>
+
+<section id="shop" class="wrap sec">
+  <h2>All products</h2>
+  <div class="tools">
+    <div id="chips" class="chips" role="group" aria-label="Filter by category"></div>
+    <label class="sortl">Sort by
+      <select id="sort"><option value="default">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="az">Name: A to Z</option></select>
+    </label>
+  </div>
+  <div id="grid" class="grid"></div>
+  <p id="empty" class="empty" hidden>No products match your search. Try a different word or choose another category.</p>
+</section>
+
+<section class="wrap sec"><h2>What customers say</h2><div id="reviews" class="reviews"></div></section>
+
+<section id="faq" class="wrap sec">
+  <h2>Shipping, returns and payment</h2>
+  <details open><summary>Payment</summary><p>We accept prepaid orders only. After you send your order on WhatsApp, we share UPI payment details. Your order is confirmed once payment is received. Cash on delivery is not available.</p></details>
+  <details><summary>Shipping</summary><p>Orders are dispatched after payment confirmation. Delivery time depends on your location and is shared on WhatsApp when we confirm your order.</p></details>
+  <details><summary>Returns and refunds</summary><p>If your item arrives damaged or incorrect, message us on WhatsApp within 48 hours of delivery with photos or an unboxing video. We will arrange a replacement or refund.</p></details>
+  <details><summary>How do I order?</summary><p>Add items to your cart, tap Checkout, enter your name, phone number and address, then send the prepared message on WhatsApp.</p></details>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap fgrid">
+    <div><img class="flogo" src="images/logo.jpeg" alt="Trend To Cart"><p>Find what's worth it.</p></div>
+    <div><h4>Contact</h4><p><a id="fMail" href="#"></a></p><p><a id="fPhone" href="#"></a></p><p><a id="fWa" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a></p></div>
+    <div><h4>Follow us</h4><p><a id="sIg" target="_blank" rel="noopener">Instagram</a></p><p><a id="sFb" target="_blank" rel="noopener">Facebook</a></p><p><a id="sYt" target="_blank" rel="noopener">YouTube</a></p></div>
+  </div>
+  <p class="copy">&copy; <span id="yr"></span> Trend To Cart. All rights reserved.</p>
+</footer>
+
+<dialog id="cartDlg" class="side"><div class="dh"><h3>Your cart</h3><button class="x" data-close aria-label="Close">&times;</button></div><div id="cartBody"></div></dialog>
+
+<dialog id="coDlg"><div class="dh"><h3>Checkout</h3><button class="x" data-close aria-label="Close">&times;</button></div>
+  <div id="coSummary" class="sum"></div>
+  <form id="coForm">
+    <label>Full name<input name="name" required autocomplete="name"></label>
+    <label>Phone number<input name="phone" type="tel" required pattern="[0-9+ ]{10,15}" title="Enter a valid phone number" autocomplete="tel"></label>
+    <label>Delivery address<textarea name="address" rows="3" required autocomplete="street-address"></textarea></label>
+    <button class="btn wa" type="submit">Send order on WhatsApp</button>
+    <p class="note">Prepaid orders only. We will share UPI payment details on WhatsApp.</p>
+  </form>
+</dialog>
+
+<dialog id="detailDlg" class="wide"><button class="x abs" data-close aria-label="Close">&times;</button><div id="detailBody"></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

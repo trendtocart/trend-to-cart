@@ -31,7 +31,7 @@ const PRODUCTS = [
     shortDesc: "All-in-one cleaning kit for keyboards, earbuds and electronic devices.",
     fullDesc: "All-in-one cleaning kit for keyboards, earbuds and electronic devices.",
     inStock: true,
-    images: ["TTC-001-1.jpg"],
+    images: ["TTC-001-1.webp"],
     tags: ["Best Seller"]
   },
   {
@@ -43,7 +43,7 @@ const PRODUCTS = [
     shortDesc: "Compact portable cleaner for everyday screen cleaning.",
     fullDesc: "Compact portable cleaner for everyday screen cleaning.",
     inStock: true,
-    images: ["TTC-001-2.jpg"],
+    images: ["TTC-001-2.webp"],
     tags: ["Best Seller"]
   },
   {
@@ -55,7 +55,7 @@ const PRODUCTS = [
     shortDesc: "Fun panda toy with rotating, spinning and moving actions.",
     fullDesc: "Fun panda toy with rotating, spinning and moving actions.",
     inStock: true,
-    images: ["TTC-001-3.jpg"],
+    images: ["TTC-001-3.webp"],
     tags: ["Popular"]
   },
   {
@@ -67,7 +67,7 @@ const PRODUCTS = [
     shortDesc: "Cute dancing toy that brings fun and entertainment to kids.",
     fullDesc: "Cute dancing toy that brings fun and entertainment to kids.",
     inStock: true,
-    images: ["TTC-001-4.jpg"],
+    images: ["TTC-001-4.webp"],
     tags: ["Trending"]
   },
   {
@@ -79,7 +79,7 @@ const PRODUCTS = [
     shortDesc: "Space-saving chopping board for convenient kitchen use.",
     fullDesc: "Space-saving chopping board for convenient kitchen use.",
     inStock: true,
-    images: ["TTC-001-5.jpg"],
+    images: ["TTC-001-5.webp"],
     tags: ["Best Seller"]
   },
   {
@@ -91,7 +91,7 @@ const PRODUCTS = [
     shortDesc: "Multi-surface cleaning sponge for everyday cleaning needs.",
     fullDesc: "Multi-surface cleaning sponge for everyday cleaning needs.",
     inStock: true,
-    images: ["TTC-001-6.jpg"],
+    images: ["TTC-001-6.webp"],
     tags: ["Value Pack"]
   },
   {
@@ -103,7 +103,7 @@ const PRODUCTS = [
     shortDesc: "Comfortable knee support for everyday activities.",
     fullDesc: "Comfortable knee support for everyday activities.",
     inStock: true,
-    images: ["TTC-001-7.jpg"],
+    images: ["TTC-001-7.webp"],
     tags: ["Popular"]
   },
   {
@@ -115,7 +115,7 @@ const PRODUCTS = [
     shortDesc: "Helps clean your washing machine and remove built-up residue.",
     fullDesc: "Helps clean your washing machine and remove built-up residue.",
     inStock: true,
-    images: ["TTC-001-8.jpg"],
+    images: ["TTC-001-8.webp"],
     tags: ["Value Pack"]
   },
   {
@@ -127,7 +127,7 @@ const PRODUCTS = [
     shortDesc: "Interactive moving toy to keep your cat entertained.",
     fullDesc: "Interactive moving toy to keep your cat entertained.",
     inStock: true,
-    images: ["TTC-001-9.jpg"],
+    images: ["TTC-001-9.webp"],
     tags: ["Trending"]
   },
   {
@@ -139,7 +139,7 @@ const PRODUCTS = [
     shortDesc: "Compact portable mesh nebulizer device.",
     fullDesc: "Compact portable mesh nebulizer device.",
     inStock: true,
-    images: ["TTC-001-10.jpg"],
+    images: ["TTC-001-10.webp"],
     tags: ["Popular"]
   },
   {
@@ -151,7 +151,7 @@ const PRODUCTS = [
     shortDesc: "Flexible cleaning tool for removing blockages from drain pipes.",
     fullDesc: "Flexible cleaning tool for removing blockages from drain pipes.",
     inStock: true,
-    images: ["TTC-001-11.jpg"],
+    images: ["TTC-001-11.webp"],
     tags: ["Best Seller"]
   },
   {
@@ -163,7 +163,7 @@ const PRODUCTS = [
     shortDesc: "Compact mop for quick and easy everyday cleaning.",
     fullDesc: "Compact mop for quick and easy everyday cleaning.",
     inStock: true,
-    images: ["TTC-001-12.jpg"],
+    images: ["TTC-001-12.webp"],
     tags: ["Popular"]
   },
   {
@@ -175,7 +175,7 @@ const PRODUCTS = [
     shortDesc: "Easy-to-use 2-in-1 hair color stick for quick and convenient grey hair touch-ups.",
     fullDesc: "Easy-to-use 2-in-1 hair color stick for quick and convenient grey hair touch-ups.",
     inStock: true,
-    images: ["TTC-001-13.jpg"],
+    images: ["TTC-001-13.webp"],
     tags: ["Trending"]
   }
 ];

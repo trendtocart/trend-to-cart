@@ -33,5 +33,41 @@ const PRODUCTS = [
     inStock: true,
     images: ["TTC-001-1.jpg"],
     tags: ["Best Seller"]
+  },
+  {
+    id: "TTC-002",
+    name: "Teddy Bear",
+    category: "Toy",
+    price: 250,
+    originalPrice: 599,
+    shortDesc: "Teddy Bear with more fur",
+    fullDesc: "Teddy Bear with more fur",
+    inStock: true,
+    images: ["TTC-001-2.jpg"],
+    tags: ["Best Seller"]
+  },
+  {
+    id: "TTC-003",
+    name: "Dancing Catcus",
+    category: "Toy",
+    price: 800,
+    originalPrice: 1500,
+    shortDesc: "Dancing Catcus with music",
+    fullDesc: "Dancing Catcus with music",
+    inStock: true,
+    images: ["TTC-001-3.jpg"],
+    tags: ["Best Seller"]
+  },
+  {
+    id: "TTC-004",
+    name: "Train Toy",
+    category: "Toy",
+    price: 400,
+    originalPrice: 1200,
+    shortDesc: "Train Toy with more compartments",
+    fullDesc: "Train Toy with more compartments",
+    inStock: true,
+    images: ["TTC-001-4.jpg"],
+    tags: ["Best Seller"]
   }
 ];

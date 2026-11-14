@@ -28,7 +28,7 @@
   function renderShop() {
     const q = state.q.toLowerCase();
     let list = P.filter(p => (state.cat === 'All' || p.category === state.cat) &&
-      (!q || [p.name, p.category, p.shortDesc, (p.tags || []).join(' ')].join(' ').toLowerCase().includes(q)));
+      (!q || [p.name, p.category, p.shortDesc, p.fullDesc, (p.tags || []).join(' ')].join(' ').toLowerCase().includes(q)));
     if (state.sort === 'low') list.sort((a, b) => a.price - b.price);
     if (state.sort === 'high') list.sort((a, b) => b.price - a.price);
     if (state.sort === 'az') list.sort((a, b) => a.name.localeCompare(b.name));
@@ -71,7 +71,7 @@
 
   function openDetail(id) {
     const p = find(id), vs = p.variants || [];
-    $('#detailBody').innerHTML = `<div class="det" data-id="${esc(p.id)}"><div><img class="main" src="${esc(imgSrc(p))}" alt="${esc(p.name)}"><div class="thumbs">${(p.images || []).map((f, i) => `<img src="${esc(imgSrc(p, i))}" alt="Photo ${i + 1}" class="${i ? '' : 'on'}" data-i="${i}">`).join('')}</div></div>
+    $('#detailBody').innerHTML = `<div class="det" data-id="${esc(p.id)}"><div><img class="main" src="${esc(imgSrc(p))}" alt="${esc(p.name)}"><div class="thumbs">${(p.images || []).length < 2 ? '' : (p.images || []).map((f, i) => `<img src="${esc(imgSrc(p, i))}" alt="Photo ${i + 1}" class="${i ? '' : 'on'}" data-i="${i}">`).join('')}</div></div>
 <div><p class="cat">${esc(p.category)}</p><h3>${esc(p.name)}</h3><p class="price"><b>${money(p.price)}</b>${discount(p) ? `<s>${money(p.originalPrice)}</s>` : ''}</p><p class="fd">${esc(p.fullDesc)}</p>
 ${vs.length ? `<select class="var" aria-label="Choose option">${vs.map(v => `<option value="${esc(v.label)}">${esc(v.label)}${v.price != null ? ' - ' + money(v.price) : ''}</option>`).join('')}</select>` : ''}
 <div class="acts">${p.inStock ? '<button class="btn ghost" data-act="add">Add to cart</button><button class="btn" data-act="buy">Buy now</button>' : '<button class="btn" disabled>Out of stock</button>'}</div></div></div>`;
